@@ -61,7 +61,7 @@ export default function Listings() {
               placeholder="Search listings..."
               className="w-full p-2 border border-fairy-3 rounded-lg mb-4"
             />
-            <button className="p-2 mb-4 bg-fairy-3 rounded-lg ml-4 text-fairy-1" type="submit">Search</button>
+            <button className="p-2 mb-4 font-fairy2 rounded-lg ml-4 text-fairy-1 bg-fairy-4 px-3 py-1.5 text-sm/6 font-semibold hover:bg-fairy-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fairy-3" type="submit">Search</button>
           </form>
         </div>
         {searched && (
@@ -92,7 +92,7 @@ export default function Listings() {
         )}
 
         <div className="p-8 lg:24">
-          <h1 className="text-2xl font-fairy mb-4">Listings</h1>
+          <h1 className="text-2xl font-fairy text-fairy-3 mb-4">Listings</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 ">
             {listings.map((listing) => (
               <Link to={`/listings/${listing.id}`} key={listing.id} >

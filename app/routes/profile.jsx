@@ -62,7 +62,7 @@ export default function profile() {
   return (
     <div className="@container lg:w-2/3 px-4 mx-auto">
       <section className="pt-16">
-        <h1 className="text-5xl font-fairy mb-4">Profile</h1>
+        <h1 className="text-5xl font-fairy mb-4 text-fairy-2">Profile</h1>
         <div className="w-full">
           <div className="relative flex flex-col min-w-0 bg-white w-full mb-6 shadow-xl rounded-lg mt-16">
             <div className="px-6">
@@ -101,7 +101,7 @@ export default function profile() {
                 </div>
               </div>
               <div className="mt-10 py-10 border-t text-center">
-                <h1 className="text-2xl font-fairy mb-4">My listings</h1>
+                <h1 className="text-2xl font-fairy mb-4 text-fairy-3">My listings</h1>
                 <div>
                   {profile?.listings?.length ? (
                     <div className="gap-10 mb-4 ">

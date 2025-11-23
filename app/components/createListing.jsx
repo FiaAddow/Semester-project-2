@@ -79,12 +79,12 @@ export default function CreateListing() {
 
   return (
     <div className="mx-auto mt-10">
-      <h1 className="text-2xl font-bold mb-6">Create new listing</h1>
+      <h1 className="text-2xl font-fairy ml-11 font-bold  text-fairy-3 mb-6">Create new listing</h1>
       <form onSubmit={handleSubmit} method="post" className="space-y-4 px-12">
         <div>
           <label
             htmlFor="title"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-fairy-5"
           >
             Title
           </label>
@@ -93,13 +93,13 @@ export default function CreateListing() {
             name="title"
             id="title"
             placeholder="Enter title"
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block w-full px-3 py-2 border border-fairy-4 rounded-md shadow-sm focus:outline-none focus:ring-fairy-3 focus:border-fairy-3"
           />
         </div>
         <div>
           <label
             htmlFor="endsAt"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-fairy-5"
           >
             Ends At
           </label>
@@ -107,13 +107,13 @@ export default function CreateListing() {
             type="datetime-local"
             name="endsAt"
             id="endsAt"
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block w-full px-3 py-2 border border-fairy-4 rounded-md shadow-sm focus:outline-none focus:ring-fairy-3 focus:border-fairy-3"
           />
         </div>
         <div>
           <label
             htmlFor="description"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-fairy-5"
           >
             Description
           </label>
@@ -122,14 +122,14 @@ export default function CreateListing() {
             id="description"
             placeholder="Enter description"
             rows="4"
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block w-full px-3 py-2 border border-fairy-4 rounded-md shadow-sm focus:outline-none focus:ring-fairy-3 focus:border-fairy-3"
           ></textarea>
         </div>
 
         <div>
           <label
             htmlFor="tags"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-fairy-5"
           >
             Tags
           </label>
@@ -138,7 +138,7 @@ export default function CreateListing() {
             name="tags"
             id="tags"
             placeholder="tag1, tag2, tag3"
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block w-full px-3 py-2 border border-fairy-4 rounded-md shadow-sm focus:outline-none focus:ring-fairy-3 focus:border-fairy-3"
           />
         </div>
 
@@ -149,7 +149,7 @@ export default function CreateListing() {
             <div>
               <label
                 htmlFor="mediaUrl"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-fairy-5"
               >
                 Image URL 1
               </label>
@@ -158,13 +158,13 @@ export default function CreateListing() {
                 name="mediaUrl1"
                 id="mediaUrl1"
                 placeholder="https://example.com/image.jpg"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="mt-1 block w-full px-3 py-2 border border-fairy-4 rounded-md shadow-sm focus:outline-none focus:ring-fairy-3 focus:border-fairy-3"
               />
             </div>
             <div>
               <label
                 htmlFor="mediaAlt"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-fairy-5"
               >
                 Alt Text 1
               </label>
@@ -173,7 +173,7 @@ export default function CreateListing() {
                 name="mediaAlt1"
                 id="mediaAlt1"
                 placeholder="Alt text for media"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="mt-1 block w-full px-3 py-2 border border-fairy-4 rounded-md shadow-sm focus:outline-none focus:ring-fairy-3 focus:border-fairy-3"
               />
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function CreateListing() {
             <div>
               <label
                 htmlFor="mediaUrl"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-fairy-5"
               >
                 Image URL 2
               </label>
@@ -191,13 +191,13 @@ export default function CreateListing() {
                 name="mediaUrl2"
                 id="mediaUrl2"
                 placeholder="https://example.com/image.jpg"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="mt-1 block w-full px-3 py-2 border border-fairy-4 rounded-md shadow-sm focus:outline-none focus:ring-fairy-3 focus:border-fairy-3"
               />
             </div>
             <div>
               <label
                 htmlFor="mediaAlt"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-fairy-5"
               >
                 Alt Text 2
               </label>
@@ -206,7 +206,7 @@ export default function CreateListing() {
                 name="mediaAlt2"
                 id="mediaAlt2"
                 placeholder="Alt text for media"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="mt-1 block w-full px-3 py-2 border border-fairy-4 rounded-md shadow-sm focus:outline-none focus:ring-fairy-3 focus:border-fairy-3"
               />
             </div>
           </div>
@@ -217,7 +217,7 @@ export default function CreateListing() {
             <div>
               <label
                 htmlFor="mediaUrl"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-fairy-5"
               >
                 Image URL 3
               </label>
@@ -226,13 +226,13 @@ export default function CreateListing() {
                 name="mediaUrl3"
                 id="mediaUrl3"
                 placeholder="https://example.com/image.jpg"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="mt-1 block w-full px-3 py-2 border border-fairy-4 rounded-md shadow-sm focus:outline-none focus:ring-fairy-3 focus:border-fairy-3"
               />
             </div>
             <div>
               <label
                 htmlFor="mediaAlt"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-fairy-5"
               >
                 Alt Text 3
               </label>
@@ -241,14 +241,14 @@ export default function CreateListing() {
                 name="mediaAlt3"
                 id="mediaAlt3"
                 placeholder="Alt text for media"
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="mt-1 block w-full px-3 py-2 border border-fairy-4 rounded-md shadow-sm focus:outline-none focus:ring-fairy-3 focus:border-fairy-3"
               />
             </div>
           </div>
         </div>
         <button
           type="submit"
-          className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="w-full bg-fairy-4 text-white py-2 px-4 rounded-md hover:bg-fairy-3 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fairy-3"
         >
           Submit
         </button>

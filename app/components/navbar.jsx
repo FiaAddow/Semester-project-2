@@ -73,7 +73,7 @@ export default function Navbar() {
                         <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                             {/* Profile dropdown */}
                             <Menu as="div" className="relative ml-3">
-                                <MenuButton className="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+                                <MenuButton className="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fairy-3">
                                     <span className="absolute -inset-1.5" />
                                     <span className="sr-only">Open user menu</span>
                                     <img
@@ -85,12 +85,12 @@ export default function Navbar() {
 
                                 <MenuItems
                                     transition
-                                    className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-gray-800 py-1 outline -outline-offset-1 outline-white/10 transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+                                    className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-fairy-5 py-1 outline -outline-offset-1 outline-white/10 transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
                                 >
                                     <MenuItem>
                                         <Link
                                             to="/profile"
-                                            className="block px-4 py-2 text-sm text-gray-300 data-focus:bg-white/5 data-focus:outline-hidden"
+                                            className="block px-4 py-2 text-sm text-fairy-1 font-fairy2 data-focus:bg-white/5 data-focus:outline-hidden"
                                         >
                                             Your profile
                                         </Link>
@@ -106,7 +106,7 @@ export default function Navbar() {
 
                                                 window.location.href = "/login"
                                             }}
-                                            className="block px-4 py-2 text-sm text-gray-300 data-focus:bg-white/5 data-focus:outline-hidden"
+                                            className="block px-4 py-2 text-sm text-fairy-1 data-focus:bg-white/5 data-focus:outline-hidden"
                                         >
                                             Sign out
                                         </a>
