@@ -5,7 +5,7 @@ import { Link } from "react-router";
 export function meta({ }) {
   return [
     { title: "Listings" },
-    { name: "Semesterproject2"},
+    { name: "Semesterproject2" },
   ];
 }
 const API = import.meta.env.VITE_API_URL;
@@ -38,7 +38,6 @@ export default function Listings() {
     const fetchData = async () => {
       const response = await fetch(`${API}/auction/listings?_active=true`);
       if (response.status === 200) {
-        console.log("200");
         const data = await response.json();
         setListings(data.data);
       } else if (response.status === 404) {

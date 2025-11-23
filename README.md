@@ -1,87 +1,70 @@
-# Welcome to React Router!
+# Semester Project 2 - Auction Site
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A React-based auction website where users can browse, bid on, and create auction listings.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## Quick Start
 
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
+### 1. Install Dependencies
 ```bash
 npm install
 ```
 
-### Development
+### 2. Set Up Environment
+Create a `.env` file in the root directory:
+```
+VITE_API_URL=https://v2.api.noroff.dev
+VITE_API_KEY=your-api-key-here
+```
+Get your API key from [Noroff API Documentation](https://docs.noroff.dev/).
 
-Start the development server with HMR:
-
+### 3. Run the Project
 ```bash
 npm run dev
 ```
+Open http://localhost:5173 in your browser.
 
-Your application will be available at `http://localhost:5173`.
+## Features
 
-## Building for Production
+- **Browse Listings**: View active auctions with images and descriptions
+- **Search**: Find listings by keywords
+- **Authentication**: Register and login to access full features
+- **Bidding**: Place bids on items (login required)
+- **Create Listings**: Add new auction items (login required)
+- **User Profile**: View your listings, wins, and credits
 
-Create a production build:
+## Technologies
+
+- React 19
+- React Router 6
+- Tailwind CSS
+- Headless UI
+- Vite
+
+## Build for Production
 
 ```bash
 npm run build
 ```
+Deploy the `dist/` folder to Netlify or any static hosting service.
 
-## Deployment
+## For Testers
 
-### Docker Deployment
+1. **Setup**: Follow Quick Start above
+2. **Test User Registration**: Try creating a new account
+3. **Test Login**: Login with registered credentials
+4. **Test Bidding**: Login and place a bid on an active listing
+5. **Test Create Listing**: Go to profile page and create a new auction
+6. **Check Errors**: Try invalid actions like bidding without login
+7. **Mobile Test**: Check responsiveness on mobile devices
+8. **API Errors**: Test behavior when API is unavailable
 
-To build and run using Docker:
+## Project Structure
 
-```bash
-docker build -t my-app .
+- `src/routes/` - Page components (Home, Listings, Profile, etc.)
+- `src/components/` - Reusable components
+- `public/` - Static assets
+- `app/` - App router structure
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
+## API
 
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+Uses Noroff Auction API v2. All authenticated requests need Bearer token and API key headers.

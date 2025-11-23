@@ -5,7 +5,7 @@ import Listings from "./listings";
 export function meta({ }) {
   return [
     { title: "Home" },
-    { name: "semesterprojet2", content: "Welcome to React Router!" },
+    { name: "Home" },
   ];
 }
 

@@ -104,7 +104,7 @@ export default function Navbar() {
                       to="/profile"
                       className="block px-4 py-2 text-sm text-fairy-1 font-fairy2 data-focus:bg-white/5 data-focus:outline-hidden"
                     >
-                      Your profile
+                      My profile
                     </Link>
                   </MenuItem>
                   <MenuItem>
