@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import Bids from "../components/bids.jsx";
 
-export function meta({}) {
+
+export function meta({ }) {
   return [
     { title: "New React Router Apps" },
     { name: "description", content: "Welcome to React Router!" },
@@ -18,7 +20,6 @@ export default function Listing({ params }) {
       );
 
       if (response.status === 200) {
-        console.log("200");
         const data = await response.json();
         setListing(data.data);
       } else if (response.status === 404) {
@@ -40,36 +41,39 @@ export default function Listing({ params }) {
 
     return <p>{listing.error}</p>;
   }
-
-  console.log("Lisings data", listing);
-
+  console.log(listing);
   if (listing) {
     return (
-      <div className="p-4">
-        <h1>Listing id</h1>
-        <ul>
-          {/* Make this a card component */}
-          <div key={listing.id}>
+      <div className="@container p-10 mt-42 mx-6 md:mx-12 lg:mx-24 border border-fairy-4 bg-white">
+
+        {/* Make this a card component */}
+        <div className="flex flex-col items-center gap-8"
+          key={listing.id}>
+          <div className="lg:w-2/3 -mt-42">
+            {
+              listing.media[0] && (
+                <img className="w-full object-cover object-center rounded-lg" src={listing?.media?.[0]?.url} alt="" />
+              )
+            }
+          </div>
+          <div className="flex flex-col items-center gap-4">
+            <h1 className="text-2xl font-fairy-2 text-fairy-5 text-center capitalize" key={listing.id}>
+              {listing.title}
+            </h1>
+            {listing.description &&
+              <div className="max-w-xl text-center rounded p-5 border border-fairy-2">
+                <p className="text-fairy-5 text-md">{listing.description}</p>
+              </div>
+            }
+          </div>
+          <hr className="w-full text-center" />
+          <div className="">
+            <h1 className="font-fairy text-2xl text-fairy-4 text-center">Bids:</h1>
             <div>
-              <h1 className="text-3xl" key={listing.id}>
-                {listing.title}
-              </h1>
-            </div>
-            <div>
-              <p>{listing.description}</p>
-            </div>
-            <div>
-              <h1>Bids</h1>
-              {listing.bids.map((bid) => (
-                <div key={bid.id}>
-                  <p>
-                    Amount: {bid.amount} kr by {bid.bidder.name}
-                  </p>
-                </div>
-              ))}
+              <Bids bids={listing.bids} listingId={listing.id} />
             </div>
           </div>
-        </ul>
+        </div>
       </div>
     );
   }
