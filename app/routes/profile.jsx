@@ -10,14 +10,14 @@ export function meta({ }) {
   ];
 }
 
-export default function profile() {
+export default function Profile() {
   const [profile, setprofile] = useState()
   const navigate = useNavigate();
 
   const API = import.meta.env.VITE_API_URL;
   const APIKEY = import.meta.env.VITE_API_KEY;
 
-  const BEARER = localStorage.getItem("token");
+  const BEARER = localStorage?.getItem("token")
 
   useEffect(() => {
     // Check if user is logged in

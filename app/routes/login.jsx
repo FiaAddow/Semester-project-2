@@ -1,12 +1,10 @@
-import { redirect, useNavigate } from "react-router";
-import { Welcome } from "../welcome/welcome";
-import Listings from "./listings";
+import { useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 
 export function meta({ }) {
   return [
- { title: "Login" },
-    { name: "Semesterproject2"},
+    { title: "Login" },
+    { name: "Semesterproject2" },
   ];
 }
 

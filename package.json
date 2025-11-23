@@ -10,6 +10,7 @@
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
+    "@netlify/vite-plugin-react-router": "^2.1.2",
     "@react-router/node": "^7.9.2",
     "@react-router/serve": "^7.9.2",
     "isbot": "^5.1.31",
@@ -18,8 +19,11 @@
     "react-router": "^7.9.2"
   },
   "devDependencies": {
+    "@netlify/vite-plugin": "^2.7.14",
     "@react-router/dev": "^7.9.2",
     "@tailwindcss/vite": "^4.1.13",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
     "tailwindcss": "^4.1.13",
     "vite": "^7.1.7"
   }
