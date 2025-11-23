@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --font-fairy: "Delius Swash Caps", cursive;
+  --font-fairy2: "inter", sans-serif;
+
+  --color-fairy-1: #F6EFF9;
+  --color-fairy-2: #A786BF;
+  --color-fairy-3: #9F80DA;
+  --color-fairy-4: #9880AB;
+  --color-fairy-5: #483953;
+}
+
+html,
+body {
+  @apply bg-fairy-1;
+}
