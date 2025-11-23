@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 
 export function meta({ }) {
   return [
-    { title: "New React Router Apps" },
-    { name: "description", content: "Welcome to React Router!" },
+ { title: "Login" },
+    { name: "Semesterproject2"},
   ];
 }
 

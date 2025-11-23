@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router";
 export function meta({ }) {
   return [
     { title: "Profile" },
-    { name: "description", content: "Welcome to React Router!" },
+    { name: "semeterproject2", content: "Welcome to React Router!" },
   ];
 }
 

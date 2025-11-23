@@ -4,8 +4,8 @@ import Bids from "../components/bids.jsx";
 
 export function meta({ }) {
   return [
-    { title: "New React Router Apps" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "single-listing" },
+    { name: "semesterproject2", content: "Welcome to Homepage!" },
   ];
 }
 const API = import.meta.env.VITE_API_URL;

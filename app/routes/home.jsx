@@ -4,8 +4,8 @@ import Listings from "./listings";
 
 export function meta({ }) {
   return [
-    { title: "New React Router Apps" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Home" },
+    { name: "semesterprojet2", content: "Welcome to React Router!" },
   ];
 }
 
